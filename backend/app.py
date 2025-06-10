@@ -6,6 +6,7 @@ from sqlalchemy.sql import func
 
 app = Flask(__name__)
 CORS(app)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1234@localhost/job_listings_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
