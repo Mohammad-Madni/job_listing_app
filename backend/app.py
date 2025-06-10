@@ -123,5 +123,6 @@ def delete_job(id):
         return jsonify({'message': 'Job deleted successfully'})
     return jsonify({'error': 'Job not found'}), 404
 
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
